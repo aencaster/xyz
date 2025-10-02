@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="canonical" href="https://ncstr.xyz/404">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="aencaster">
+  <meta name="msapplication-TileColor" content="#fff">
+  <meta name="theme-color" content="#fff">
+  
+  <meta name="author" content="Michael Voronin">
+  <title>404 by @aencaster</title>
+  <meta name="description" content="Это страница 404 Михаила Воронина, арт-директора и бренд-дизайнера.">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:url" content="https://ncstr.xyz/404">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="404 by @aencaster">
+  <meta property="og:description" content="Это страница 404 Михаила Воронина, арт-директора и бренд-дизайнера.">
+  <meta property="og:image" content="https://ncstr.xyz/og-preview.png">
+  <meta property="og:image" content="https://ncstr.xyz/og-preview.jpg">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="ncstr.xyz">
+  <meta property="twitter:url" content="https://ncstr.xyz/404">
+  <meta name="twitter:title" content="404 by @aencaster">
+  <meta name="twitter:description" content="Это страница 404 Михаила Воронина, арт-директора и бренд-дизайнера.">
+  <meta name="twitter:image" content="https://ncstr.xyz/og-preview.png">
+  <meta name="twitter:image" content="https://ncstr.xyz/og-preview.jpg">
+
+  <link rel="preload" href="woff/NTLucent-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="woff/NTLucent-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="woff/NTLucent-Black.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="woff/NTDisplay.woff2" as="font" crossorigin="anonymous">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    .static {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      opacity: 0.05;
+      z-index: 230;
+      user-select: none;
+    }
+  
+    .error {
+      line-height: 60px;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: -60px;
+      right: 0;
+      animation: noise 2s linear infinite;
+      overflow: default;
+    }
+  
+    .error:after {
+      content: '404';
+      position: absolute;
+      line-height: 60px;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      color: #555;
+      animation: noise-1 .2s linear infinite;
+    }
+  
+    .info {
+      line-height: 60px;
+      margin: auto;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      animation: noise-3 1s linear infinite;
+    }
+  
+    .error:before {
+      content: '404';
+      position: absolute;
+      line-height: 60px;
+      margin: auto;
+      opacity: 0;
+      color: #bbb;
+      animation: noise-2 .2s linear infinite;
+    }
+
+    @keyframes noise {
+      0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; transform: scaleY(1);}  
+      4.3% {opacity: 1; transform: scaleY(1.7);}
+      43% {opacity: 1; transform: scaleX(1.5);}
+    }
+  
+    @keyframes noise-1 {
+      0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+      10% {opacity: .1;}
+      50% {opacity: .5; left: -6px;}
+      80% {opacity: .3;}
+      100% {opacity: .6; left: 2px;}
+    }
+
+    @keyframes noise-2 {
+      0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+      10% {opacity: .1;}
+      50% {opacity: .5; left: 6px;}
+      80% {opacity: .3;}
+      100% {opacity: .6; left: -2px;}
+    }
+
+    @keyframes noise-3 {
+      0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
+      4.3% {opacity: 1; transform: scaleY(4);}
+      43% {opacity: 1; transform: scaleX(1) scaleY(2) rotate(13deg);}
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="row space-md-t">
+        <div class="col-md-6 offset-md-3">
+          <h1 class="display-1 disp error">404</h1>
+          <p class="info">
+            Ошибка. Страница не найдена
+          </p>
+          <hr>
+          <p><a href="index.html"><span class="no-print">&#129120;</span> На главную</a></p>
+          <p class="copy">&copy; <script>document.write(new Date().getFullYear());</script> Михаил Воронин</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

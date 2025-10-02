@@ -1,0 +1,7 @@
+title: made by aencaster
+baseurl: "" 
+url: "https://ncstr.xyz"
+
+permalink: pretty
+
+include: [".html", "*.html"]
