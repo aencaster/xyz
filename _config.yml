@@ -1,4 +1,7 @@
-title: made by aencaster
+include:
+  - _includes
+
+title: @aencaster
 baseurl: "" 
 url: "https://ncstr.xyz"
 
