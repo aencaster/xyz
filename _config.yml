@@ -1,7 +1,9 @@
-title: @aencaster
+title: aencaster
 baseurl: "" 
 url: "https://ncstr.xyz"
-includes_dir: _includes
+
 permalink: pretty
+
 include: [".html", "*.html"]
 
+includes_dir: _includes
