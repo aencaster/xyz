@@ -1,15 +1,4 @@
 
-//   ███▄    █  ▄████▄    ██████ ▄▄▄█████▓ ██▀███  
-//   ██ ▀█   █ ▒██▀ ▀█  ▒██    ▒ ▓  ██▒ ▓▒▓██ ▒ ██▒
-//  ▓██  ▀█ ██▒▒▓█    ▄ ░ ▓██▄   ▒ ▓██░ ▒░▓██ ░▄█ ▒
-//  ▓██▒  ▐▌██▒▒▓▓▄ ▄██▒  ▒   ██▒░ ▓██▓ ░ ▒██▀▀█▄  
-//  ▒██░   ▓██░▒ ▓███▀ ░▒██████▒▒  ▒██▒ ░ ░██▓ ▒██▒
-//  ░ ▒░   ▒ ▒ ░ ░▒ ▒  ░▒ ▒▓▒ ▒ ░  ▒ ░░   ░ ▒▓ ░▒▓░
-//  ░ ░░   ░ ▒░  ░  ▒   ░ ░▒  ░ ░    ░      ░▒ ░ ▒░
-//     ░   ░ ░ ░        ░  ░  ░    ░        ░░   ░ 
-//           ░ ░ ░            ░              ░     
-//             ░                                   
-
 // ===================== ОБЩИЕ =====================
 
 var win = $(window);
@@ -24,7 +13,6 @@ $(document).ready(function () {
   imageBG();
   grid();
   handleDates();
-  linkArrows();
 
 });
 
@@ -50,26 +38,6 @@ win.on('resize', function () {
 
 
 });
-
-
-// =============== ОФОРМЛЕНИЕ ССЫЛОК ===============
-
-
-function linkArrows() {
-  const arrowMap = {
-    'link-coll': { pos: 'append', html: '<span class="no-print">&#8239;&#129127;</span>' },   //bottom-left
-    'link-out': { pos: 'append', html: '<span class="no-print">&#8239;&#129125;</span>' },    //top-right
-    'link-back': { pos: 'prepend', html: '<span class="no-print">&#129124;&#8239;</span>' },  //top-left
-    'link-fwd': { pos: 'append', html: '<span class="no-print">&#8239;&#129126;</span>' },    //bottom-right
-    'link-top': { pos: 'append', html: '<span class="no-print">&#8239;&#129121;</span>' },    //top-top
-    'link-prev': { pos: 'prepend', html: '<span class="no-print">&#129120;&#8239;</span>' },  //left
-    'link-next': { pos: 'append', html: '<span class="no-print">&#8239;&#129122;</span>' }    //right
-  };
-
-  $.each(arrowMap, function(className, config) {
-    $('.' + className)[config.pos](config.html);
-  });
-}
 
 
 // ================= ОБРАБОТКА ДАТ =================
@@ -187,12 +155,15 @@ function grid() {
     // set margins to the container
     active_container.css('margin', -Math.floor(margin / 2) + 'px');
 
-    if (ww >= 1000) {
+    if (ww >= 991) {
       if (!cols) cols = 3;
-    } else if (ww >= 700) {
-      if (cols !== 1) cols = 2;
+      // Large screens: use original column count
+    } else if (ww >= 576) {
+      // Medium screens: always 2 columns
+      cols = 2;
     } else {
-      cols = 1;
+      // Small screens: 1 column for original 3 or less, 2 columns for original 4+
+      cols = (cols >= 4) ? 2 : 1;
     }
 
     var items_width = Math.floor((container_width / cols) - margin);
@@ -208,8 +179,9 @@ function grid() {
       if (!height) $(this).css('height', 'auto');
 
       // Add .wdt2 or .hgt2 to the portfolio item for varoius layout sizes
-      if ($(this).hasClass('wdt2') && ww >= 500) $(this).css('width', (items_width * 2) + (items_margin * 2) + 'px');  
-      if ($(this).hasClass('hgt2') && ww >= 500) $(this).css('height', items_double_height + (items_margin * 2) + 'px');
+      if ($(this).hasClass('wdt2') && ww >= 576) $(this).css('width', (items_width * 2) + (items_margin * 2) + 'px');  
+      if ($(this).hasClass('hgt2') ) $(this).css('height', items_double_height + (items_margin * 2) + 'px');
+      if ($(this).hasClass('opt-hgt2') && (ww >= 991 || ww <= 576)) $(this).css('height', items_double_height + (items_margin * 2) + 'px');
     });
 
     // isotope
@@ -244,6 +216,19 @@ function grid() {
 
 }
 
+const asciiArt = `
+ ███▄    █  ▄████▄    ██████ ▄▄▄█████▓ ██▀███  
+ ██ ▀█   █ ▒██▀ ▀█  ▒██    ▒ ▓  ██▒ ▓▒▓██ ▒ ██▒
+▓██  ▀█ ██▒▒▓█    ▄ ░ ▓██▄   ▒ ▓██░ ▒░▓██ ░▄█ ▒
+▓██▒  ▐▌██▒▒▓▓▄ ▄██▒  ▒   ██▒░ ▓██▓ ░ ▒██▀▀█▄  
+▒██░   ▓██░▒ ▓███▀ ░▒██████▒▒  ▒██▒ ░ ░██▓ ▒██▒
+░ ▒░   ▒ ▒ ░ ░▒ ▒  ░▒ ▒▓▒ ▒ ░  ▒ ░░   ░ ▒▓ ░▒▓░
+░ ░░   ░ ▒░  ░  ▒   ░ ░▒  ░ ░    ░      ░▒ ░ ▒░
+   ░   ░ ░ ░        ░  ░  ░    ░        ░░   ░ 
+         ░ ░ ░            ░              ░     
+           ░                                   
+`;
+console.log(asciiArt);
 
 
 

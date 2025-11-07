@@ -6,40 +6,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="canonical" href="https://ncstr.xyz">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="favicon-48x48.png" sizes="48x48">
   <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <meta name="apple-mobile-web-app-title" content="aencaster">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="@aencaster">
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="theme-color" content="#fff">
-    
+  <meta name="description" content="Это сайт Михаила Воронина, арт-директора и бренд-дизайнера.">
   <meta name="author" content="Michael Voronin">
-  <title>now by @aencaster</title>
-  <meta name="description" content="Это страница «Сейчас» Михаила Воронина, арт-директора и бренд-дизайнера.">
+  <title>@aencaster</title>
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:url" content="https://ncstr.xyz">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="now by @aencaster">
-  <meta property="og:description" content="Это страница «Сейчас» Михаила Воронина, арт-директора и бренд-дизайнера.">
+  <meta property="og:title" content="@aencaster">
+  <meta property="og:description" content="Это сайт Михаила Воронина, арт-директора и бренд-дизайнера.">
   <meta property="og:image" content="https://ncstr.xyz/og-preview.png">
   <meta property="og:image" content="https://ncstr.xyz/og-preview.jpg">
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://ncstr.xyz">
+  <meta property="og:type" content="website">
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="ncstr.xyz">
+  <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://ncstr.xyz">
-  <meta name="twitter:title" content="now by @aencaster">
-  <meta name="twitter:description" content="Это страница «Сейчас» Михаила Воронина, арт-директора и бренд-дизайнера.">
-  <meta name="twitter:image" content="https://ncstr.xyz/og-preview.png">
-  <meta name="twitter:image" content="https://ncstr.xyz/og-preview.jpg">
+  <meta property="twitter:title" content="@aencaster">
+  <meta property="twitter:description" content="Это сайт Михаила Воронина, арт-директора и бренд-дизайнера.">
+  <meta property="twitter:image" content="https://ncstr.xyz/og-preview.png">
+  <meta property="twitter:image" content="https://ncstr.xyz/og-preview.jpg">
+
 
   <link rel="preload" href="woff/NTLucent-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="woff/NTLucent-SemiBold.woff2" as="font" crossorigin="anonymous">
@@ -50,152 +45,347 @@
 </head>
 
 <body>
-  <section>
+  <div id="preloader">
+    <div id="loader"><span></span><span></span><span></span><span></span></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light cstm-navblur bg-white fixed-top py-3" id="mainNav">
     <div class="container">
-      <div class="row space-md-t space-xl-b">
-        <div class="col-md-6 offset-md-3">
-          <h1 class="display-4 disp">Михаил Воронин</h1>
-          <h2>Что я делаю сейчас</h2>
-          <p>Это страница &#171;Сейчас&#187;. О том, что это такое, <a href="https://nownownow.com/about">здесь<span class="no-print">&#8239;&#129125;</span></a></p>
-          <p class="headline-subtitle">Обновлено 01.10.2025</p>
+      <a class="navbar-brand brand-text js-scroll-trigger" href="/">
+        <span>N</span>&nbsp;<span>C</span>&nbsp;<span>S</span>&nbsp;<span>T</span>&nbsp;<span>R</span>
+      </a><br>
+      <button class="navbar-toggler cstm-navtoggle x collapsed" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Открыть меню">
+        <span class="toggler-bar bar1"></span><span class="toggler-bar bar2"></span><span class="toggler-bar bar3"></span><span class="toggler-fallback">&equiv;&nbsp;Меню</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger disabled" href="#portfolio">Проекты</a></li>
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="cv.html">CV</a></li>
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="now.html">Сейчас</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-          <hr class="space">
-          <h2>Работаю</h2>
-          <p>
-            На&nbsp;данный момент у&nbsp;меня в&nbsp;работе один шрифтовой проект и&nbsp;два медийных проекта. 
-            Также я&nbsp;завершаю новое оформление своего сайта-портфолио и&nbsp;в&nbsp;октябре он&nbsp;появится&nbsp;здесь.
-          </p>
 
-          <hr class="space">
-          <h2>Строю карьеру</h2>
-          <p>Обновляю портфолио я&nbsp;не&nbsp;просто так. В&nbsp;августе я&nbsp;принял решение сменить 
-            сферу деятельности и&nbsp;уйти из&nbsp;промышленной печати. Начинаю поиск вакансий на&nbsp;должность 
-            арт-директора, предпочтительно в&nbsp;продукте.
-          </p>
-
-          <hr class="space">
-          <h2>Творю</h2>
-          <p>Моя техника:</p>
-          <ul class="list-inline ulp-1">
-            <li class="list-inline-item">Asus K551LN</li>
-            <li class="list-inline-item">Nothing Phone (2)</li>
-            <li class="list-inline-item">Nikon D3300</li>
-            <li class="list-inline-item">Nikkor DX 18-55mm</li>
-            <li class="list-inline-item">Гелиос 44-2</li>
-            <li class="list-inline-item">Индустар 50-2</li>
-            <li class="list-inline-item">Shure SM-58</li>
-            <li class="list-inline-item">Behringer Xenyx QX1202</li>
-            <li class="list-inline-item">Fender Telcaster American Performer</li>
-            <li class="list-inline-item">Fender Mustang I</li>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="display-4 disp">Михаил <br>Воронин</h1>
+          <ul class="list-unstyled ulp-1">
+            <li class="headline-subtitle">Честность в искренности</li>
+            <li><a class="link-out" href="https://t.me/aencaster" target="_blank" rel="nofollow">Telegram: @aencaster</a></li>
+            <li><a class="link-out" href="mailto:aencaster@gmail.com" rel="nofollow">aencaster@gmail.com</a></li>
           </ul>
-          <p>В&nbsp;этом году снял несколько фотосерий для&nbsp;личного архива. 
-            В прошлом году папа подарил гитару, за&nbsp;это вермя выучил несколько песен, из&nbsp;них 
-            Rise Against&nbsp;&ndash; Paper Wings и Give It All, Trivium&nbsp;&ndash; In&nbsp;Waves. 
-            Весной написал свою первую картину Untitled и&nbsp;сделал первый арт-объект, позже покажу на&nbsp;сайте.</p>
-
-          <hr class="space">
-          <h2>Слушаю</h2>
-          <p>Открыл для&nbsp;себя следующих исполнителей:</p>
-          <ul class="list-inline ulp-1">
-            <li class="list-inline-item">Boundaries</li>
-            <li class="list-inline-item">Destrage</li>
-            <li class="list-inline-item">Admiral Angry</li>
-            <li class="list-inline-item">Limbs</li>
-            <li class="list-inline-item"><nobr>Frank Carter & The Rattlesnakes</nobr></li>
-          </ul>
-          <p>В топе за год находятся:</p>
-          <ul class="list-inline ulp-1">
-            <li class="list-inline-item">Counterparts</li>
-            <li class="list-inline-item">Polaris</li>
-            <li class="list-inline-item">Currents</li>
-            <li class="list-inline-item">Northlane</li>
-            <li class="list-inline-item">Underoath</li>
-            <li class="list-inline-item">Sleep Token</li>
-          </ul>
-          <p>
-            У&nbsp;моего друга Ромы вышел первый сингл нового проекта, сочетающего ретровейв
-            и&nbsp;блэк-метал, я&nbsp;делал обложки, фотки и&nbsp;помогал в&nbsp;записи: 
-            <a href="https://band.link/q3evE">Nocta Lux<span class="no-print">&#8239;&#129125;</span></a>
-          </p>
-          <p>
-            Также в&nbsp;течение года собираю
-            <a href="https://music.yandex.ru/playlists/0ccfad52-2bde-5576-8e66-1ae81e904744">
-              Плейлист 2025<span class="no-print">&#8239;&#129125;</span></a>
-          </p>
-
-          <hr class="space">
-          <h2>Смотрю</h2>
-          <p>
-            Здесь проще оставить ссылку на&nbsp;<a href="https://ru.kinorium.com/user/202993/ratings/?order=date">
-              Кинориум<span class="no-print">&#8239;&#129125;</span></a>
-          </p>
-
-          <hr class="space">
-          <h2>Путешествую</h2>
-          <p>
-            <b>Москва, май:</b> снимался в&nbsp;ролике для&nbsp;совместного проекта с&nbsp;Braining 
-            Brands, вёл Ё-Фест с&nbsp;Олей и&nbsp;Полиной, отдыхал с&nbsp;девушкой: сходили в&nbsp;ледяную
-            пещеру в&nbsp;парке &#171;Зарядье&#187;, окультурились в&nbsp;ГЭС-2 и&nbsp;Garage, гуляли по&nbsp;центральным 
-            улицам, пели караоке в&nbsp;Bad Crown Bar.
-          </p>
-          <p>
-            <b>Выборг, сентябрь:</b> романтическая поездка, гуляли по&nbsp;старому городу, залезли 
-            на&nbsp;смотровую площадку башни Святого Олафа, съездили в&nbsp;парк &#171;Монрепо&#187;. В&nbsp;городе 
-            был второй &#171;первый раз&#187;, до&nbsp;этого ездил со&nbsp;школьной экскурсией и&nbsp;ничего не помню. 
-            По ощущениям: те,&nbsp;кто говорит, что Выборг можно посмотреть за&nbsp;один день&nbsp;&mdash; 
-            вы не видели Выборг по-настоящему.
-          </p>
-
-          <hr class="space">
-          <h2>Играю</h2>
-          <p>Ноуту пора на&nbsp;покой, и&nbsp;в&nbsp;ближайшем будущем я&nbsp;его поменяю, да&nbsp;и&nbsp;вдумчиво 
-            садиться играть некогда, так&nbsp;что пока стараюсь сильно не&nbsp;нагружать не&nbsp;по&nbsp;рабочим 
-            задачам и&nbsp;снова гоняю любимые олдовые&nbsp;игрушки.
-            Прошёл:
-          </p>
-          <ul class="list-inline ulp-1">
-            <li class="list-inline-item">FlatOut</li>
-            <li class="list-inline-item">NFS Underground&nbsp;2</li>
-            <li class="list-inline-item">GTA Vice City</li>
-            <li class="list-inline-item">MyHouse</li>
-            <li class="list-inline-item">DOOM</li>
-              <li class="list-inline-item">DOOM&nbsp;2</li>
-          </ul>
-          <p>
-            Сейчас играю в&nbsp;GTA San Andreas, прошёл миссии в&nbsp;Angel Pine и&nbsp;дошёл до&nbsp;гаража 
-            в&nbsp;Doherty. А&nbsp;ещё играю в&nbsp;Re-Volt RVGL, никак не&nbsp;могу пройти золотой кубок 
-            даже на&nbsp;сложности Console! Museum&nbsp;1&nbsp;&mdash; сложная трасса &#40;&#58;
-          </p>
-
-          <hr class="space">
-          <h2>Читаю</h2>
-          <p>
-            Последние пару месяцев не&nbsp;до&nbsp;чтения, но&nbsp;недавно прочел прикольную книжечку 
-            &#171;Сны о&nbsp;Лилит&#187; Андрея Максимова. Понравилась. Из&nbsp;последнего прочитанного: Гастон 
-            Башляр&nbsp;&ndash; &#171;Поэтика пространства&#187;, Джордж Оруэлл&nbsp;&ndash; &#171;Скотный двор&#187;. 
-            Ну&nbsp;и,&nbsp;как&nbsp;всегда, читаю много каналов, блогов и&nbsp;страниц в&nbsp;интернете. 
-            Время&nbsp;такое.
-          </p>
-          
-          <hr class="space">
+        </div>
+        <div class="col-md-6 mw-ms">
           <h4>Арт-директор &middot; Senior <nobr>бренд-дизайнер</nobr></h4>
           <p>
-            15 лет создаю и&nbsp;развиваю узнаваемые бренды. Моя
+            <span class="gimme-year-diff" data-start-year="2010"></span> создаю
+            и&nbsp;развиваю узнаваемые бренды. Моя
             специализация&nbsp;&mdash; комплексные визуальные системы,
             решающие бизнес-задачи&nbsp;&mdash; от&nbsp;стратегии до&nbsp;физического
             производства и&nbsp;мультимедиа. С&nbsp;нуля профессионально
             разрабатываю отмечаемые наградами шрифты. Веду <nobr>дизайн-команды</nobr> 
             и&nbsp;работаю в&nbsp;их&nbsp;составе.
           </p>
-          <p>Спасибо за внимание!</p>
-          <ul class="list-unstyled ulp-1">
-          <li><a href="https://t.me/aencaster" target="_blank">Telegram @aencaster<span class="no-print">&#8239;&#129125;</span></a></li>
-          <li><a href="mailto:aencaster@gmail.com">aencaster@gmail.com<span class="no-print">&#8239;&#129125;</span></a></li>
-          </ul>
-          <p class="copy">&copy; <script>document.write(new Date().getFullYear());</script> Михаил Воронин</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end: Header -->
+  <section>
+    <!-- portfolio -->
+    <div id="portfolio" class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="pt-5">Проекты</h2>
+          <div id="portfolio-filters" class="mb-5">
+            <ul id="filters" class="p-0">
+              <li><a href="*" class="active">Все</a></li>
+              <li><a href=".brand">Брендинг</a></li>
+              <li><a href=".media">Медиа</a></li>
+              <li><a href=".type">Шрифт</a></li>
+              <li><a href="#projects">Списком</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid" data-cols="3" data-margin="0" data-height="1"
+        data-masonry='{ "columnWidth": 200, "itemSelector": ".entry" }'>
+        <!-- entry -->
+        <div class="entry work-entry brand media wdt2">
+          <a href="sangvis.html">
+            <div class="entry-image imageBG" data-img="img/sangvis/sangvis-thumb-0.webp"></div>
+            <div class="work-entry-hover">
+              <div class="work-entry-content">
+                <div class="work-entry-title">Sangvis</div>
+                <div class="work-entry-cat">
+                  <p>
+                    Оформление для&nbsp;мелодик-дэт-метал группы
+                </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end:entry -->
+        <div class="entry work-entry type award">
+          <a href="nntt.html">
+            <div class="entry-image imageBG" data-img="img/nntt/nntt.webp"></div>
+            <div class="work-entry-hover">
+              <div class="work-entry-content">
+                <div class="work-entry-title">NT Somic</div>
+                <div class="work-entry-cat">
+                  <p>
+                    Современный геометрический гротеск
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end:entry -->
+        <div class="entry work-entry media">
+          <a href="vault.html#untitled">
+            <div class="entry-image imageBG" data-img="img/vault/untitled.webp"></div>
+            <div class="work-entry-hover">
+              <div class="work-entry-content">
+                <div class="work-entry-title">Untitled</div>
+                <div class="work-entry-cat">
+                  <p>
+                    Мультимедиа-сопровождение <br>для&nbsp;объектов искусства
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end:entry -->
+        <div class="entry work-entry brand hgt2">
+          <a href="maxwax.html">
+            <div class="entry-image imageBG" data-img="img/maxwax/maxwax.webp"></div>
+            <div class="work-entry-hover">
+              <div class="work-entry-content">
+                <div class="work-entry-title">MaxWax</div>
+                <div class="work-entry-cat">
+                  <p>
+                    Брендинг для&nbsp;центра <br>автомобильного детейлинга
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end:entry -->
+        <div class="entry work-entry brand media">
+          <a href="sangvis.html">
+            <div class="entry-image imageBG" data-img="img/sangvis/sangvis-1.webp"></div>
+            <div class="work-entry-hover">
+              <div class="work-entry-content">
+                <div class="work-entry-title">Sangvis</div>
+                <div class="work-entry-cat">
+                  <p>
+                    Оформление для&nbsp;мелодик-дэт-метал группы
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end:entry -->
+        <div class="entry work-entry brand">
+          <a href="009.html">
+            <div class="entry-image imageBG" data-img="img/009/009.webp"></div>
+            <div class="work-entry-hover">
+              <div class="work-entry-content">
+                <div class="work-entry-title">009</div>
+                <div class="work-entry-cat">
+                  <p>
+                    Оформление высокотехнологичной <br>мойки автомобилей
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end:entry -->
+        <div class="entry work-entry brand">
+          <a href="vault.html#takie">
+            <div class="entry-image imageBG" data-img="img/vault/takie.webp"></div>
+            <div class="work-entry-hover">
+              <div class="work-entry-content">
+                <div class="work-entry-title">Такие Дела</div>
+                <div class="work-entry-cat">
+                  <p>
+                    Леттеринг для&nbsp;регулярных коротких видео-новостей о&nbsp;рекламе и&nbsp;маркетинге
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end:entry -->
+        <div class="entry work-entry brand type">
+          <a href="vault.html#paula">
+            <div class="entry-image imageBG" data-img="img/vault/paula/paula.webp"></div>
+            <div class="work-entry-hover">
+              <div class="work-entry-content">
+                <div class="work-entry-title">Paula</div>
+                <div class="work-entry-cat">
+                  <p>
+                    Кастомный шрифт для&nbsp;москов&shy;ской сети&nbsp;specialty-кофеен
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end:entry -->
+        <div class="entry work-entry brand">
+          <a href="vault.html#fedanya">
+            <div class="entry-image imageBG" data-img="img/vault/fedanya.webp"></div>
+            <div class="work-entry-hover">
+              <div class="work-entry-content">
+                <div class="work-entry-title">Fedanya</div>
+                <div class="work-entry-cat">
+                  <p>
+                    Леттеринг-монограмма <br>для&nbsp;иллюстратора
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end:entry -->
+        <div class="entry work-entry type opt-hgt2">
+          <a href="nntt.html">
+            <div class="entry-image imageBG" data-img="img/nntt/nntt-stick.webp"></div>
+            <div class="work-entry-hover">
+              <div class="work-entry-content">
+                <div class="work-entry-title">NT Type</div>
+                <div class="work-entry-cat">
+                  <p>
+                    Различные материалы <br>студии шрифтового дизайна
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end:entry -->
+        <div class="entry work-entry type media wdt2 nope">
+          <a href="alias.html">
+            <div class="entry-image imageBG" data-img="img/alias/alias.webp">
+              <svg class="nda-overlay" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="100%" height="100%">
+                <circle cx="150" cy="100" r="70" stroke="var(--red)" stroke-width="27" fill="none"></circle>
+                <text x="73" y="110" text-anchor="middle" dominant-baseline="middle" font-size="93" fill="var(--white)">N</text>
+                <text x="154" y="110" text-anchor="middle" dominant-baseline="middle" font-size="93" fill="var(--white)">D</text>
+                <text x="228" y="110" text-anchor="middle" dominant-baseline="middle" font-size="93" fill="var(--white)">A</text>
+                <line x1="100" y1="50" x2="200" y2="150" stroke="var(--red)" stroke-width="27"></line>
+              </svg>
+              </div>
+            <div class="work-entry-hover">
+              <div class="work-entry-content">
+                <div class="work-entry-title">Alias Group</div>
+                <div class="work-entry-cat">
+                  <p>
+                    Оформление ценностей компании
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- /end:portfolio -->
+  </section>
+
+  <section>
+    <div id="projects" class="container">
+      
+      <div class="row mt-5">
+        <div class="col">
+        <ul class="list-unstyled ulp-1">
+          <div class="row">
+          <div class="col-md-6">
+            <li><h4><a class="link-next" href="sangvis.html">Метал-проект Sangvis</a></h4></li>
+            <li><h4><a class="link-next" href="nntt.html">Словолитня NT Type</a></h4></li>
+            <li><h4><a class="link-next" href="maxwax.html">Детейлинг MaxWax</a></h4></li>
+          </div>
+          <div class="col-md-6">
+            <li><h4><a class="link-next" href="009.html">Мойка автомобилей 009</a></h4></li>
+            <li><h4><a class="link-next" href="alias.html">Ценности Alias Group</a></h4></li>
+            <li><h4><a class="link-next" href="vault.html">Малые проекты</a></h4></li>
+          </div>
+        </ul>
+        </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- footer -->
+  <footer class="footer pb-5">
+    <div class="container">
+      <hr class="mb-3">
+      <div class="row mt-5">
+        
+        <div class="col-md-4">
+          <h3>Навигация</h3>
+          <ul class="list-unstyled p-0">
+            <li><a class="disabled" href="#portfolio">Проекты</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="now.html">Сейчас</a></li>
+            <li><a class="link-top" href="#" id="back-to-top">Наверх</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-4">
+          <h3>Контакты</h3>
+          <ul class="list-unstyled">
+            <li><a class="link-out" href="https://t.me/aencaster" target="_blank">Telegram: @aencaster</a></li>
+            <li><a class="link-out" href="mailto:aencaster@gmail.com">aencaster@gmail.com</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-3">
+          <h3>NT Type</h3>
+          <ul class="list-unstyled">
+            <li><a class="link-out" href="https://nnttttyyppee.cc/" target="_blank">Сайт</a></li>
+            <li><a class="link-out" href="https://github.com/nnttttyyppee" target="_blank">GitHub</a></li>
+            <li><a class="link-out" href="https://t.me/nnttttyyppee" target="_blank">Telegram</a></li>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-1">
+          <a href="clphn.html" class="fleuri">&#10086;</a>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-4">
+          <div class="copy">&copy; <span class="gimme-current-year"></span> Михаил Воронин</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /main content -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/jquery/isotope.pkgd.min.js"></script>
+  <script src="js/custom.js"></script>
 </body>
+
 </html>
