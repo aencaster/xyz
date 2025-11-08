@@ -47,7 +47,26 @@
   <div id="preloader">
     <div id="loader"><span></span><span></span><span></span><span></span></div>
   </div>
-    {% include nav.html %}
+<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light cstm-navblur bg-white fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand brand-text js-scroll-trigger" href="/">
+        <span>N</span>&nbsp;<span>C</span>&nbsp;<span>S</span>&nbsp;<span>T</span>&nbsp;<span>R</span>
+      </a><br>
+      <button class="navbar-toggler cstm-navtoggle x collapsed" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="toggler-bar bar1"></span><span class="toggler-bar bar2"></span><span class="toggler-bar bar3"></span><span class="toggler-fallback">&equiv;&nbsp;Меню</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="/">Проекты</a></li>
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="cv">CV</a></li>
+          <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="now">Сейчас</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <header>
 
     <div class="container">
@@ -201,14 +220,58 @@
 
       <div class="row py-5">
         <div class="col flexin apart">
-          <a href="nntt.html" class="link-prev">Предыдущий проект</a>
-          <a href="009.html" class="link-next">Следующий проект</a>
+          <a href="nntt" class="link-prev">Назад</a>
+          <a href="009" class="link-next">Дальше</a>
         </div>
       </div>
     </div>
   </section>
 
- {% include footer.html %}
+<!-- footer -->
+  <footer class="footer pb-5">
+    <div class="container">
+      <hr class="mb-3">
+      <div class="row mt-5">
+
+        <div class="col-md-4">
+          <h3>Навигация</h3>
+          <ul class="list-unstyled p-0">
+            <li><a href="/">Проекты</a></li>
+            <li><a href="cv">CV</a></li>
+            <li><a href="now">Сейчас</a></li>
+            <li><a class="link-top" href="#" id="back-to-top">Наверх</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h3>Контакты</h3>
+          <ul class="list-unstyled">
+            <li><a class="link-out" href="https://t.me/aencaster" target="_blank">Telegram: @aencaster</a></li>
+            <li><a class="link-out" href="mailto:aencaster@gmail.com">aencaster@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h3>NT Type</h3>
+          <ul class="list-unstyled">
+            <li><a class="link-out" href="https://nnttttyyppee.cc/" target="_blank">Сайт</a></li>
+            <li><a class="link-out" href="https://github.com/nnttttyyppee" target="_blank">GitHub</a></li>
+            <li><a class="link-out" href="https://t.me/nnttttyyppee" target="_blank">Telegram</a></li>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-1">
+          <a href="clphn" class="fleuri">&#10086;</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="copy">&copy; <span class="gimme-current-year"></span> Михаил Воронин</div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- /main content -->
   <!-- Bootstrap core JavaScript -->

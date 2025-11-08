@@ -196,10 +196,10 @@ hr {
 
 #loader {
   position: absolute;
-  top:50%;
-  left:50%;
-  width: 90px;
-  height: 90px;
+  top:50vh;
+  left:calc(50vw - (min(20vw, 20vh) / 2));
+  width: min(20vw, 20vh);
+  height: min(20vh, 20vw);
   border-radius: 50%;
   background: linear-gradient(var(--white), var(--dark));
   animation: loader 1s linear infinite;

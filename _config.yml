@@ -5,5 +5,3 @@ url: "https://ncstr.xyz"
 permalink: pretty
 
 include: [".html", "*.html"]
-
-includes_dir: _includes
